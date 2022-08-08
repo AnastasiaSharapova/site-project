@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+
+
+<div class="container py-5">
+    <h1>Вход</h1>
+    <p class="text-center">Если у Вас есть аккаунт нажмите кнопку Войти</p>
+    <form method="POST">
+        {% csrf_token %}
+        {{ login_form }}
+
+    </form>
+    <p class="text-center"><a href="/account" class="btn btn-warning">Войти</a></p>
+</div>
+
+{% endblock %}

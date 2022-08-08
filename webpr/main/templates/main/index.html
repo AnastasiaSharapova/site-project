@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+   <div class="features">
+      <h1>{{ title }}</h1>
+      <p>Новости метеорологии.<br>Тут Вы можете познакомиться с новостями по теме, а так же поделиться своими</p>
+      <br>
+      <a href="https://www.gismeteo.by/weather-minsk-4248/" class="btn btn-warning">Узнать прогноз погоды </a>
+      <br>
+      <br><br>
+      <a href="{% url 'news_home' %}" class="btn btn-info">Перейти к новостям </a>
+      <br><br>
+      <p>Подписывайся на нашего ТГ бота и будь готов ко всему :)</p>
+      <a href="https://t.me/pogodaRTG_bot" class="btn btn-info">TelegramBot(о погоде в любом уголке мира)</a>
+
+   </div>
+{% endblock %}
